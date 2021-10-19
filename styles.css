@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
+
+/* Here is the setup to our design*/
 :root {
-  --primaryColor: #f09d51;
-  --mainWhite: #fff;
-  --mainBlack: #222;
+  --primaryColor: #1f1c19;
+  --mainWhite: rgba(194, 184, 183, 0.979);
+  --mainBlack: rgb(170, 169, 209);
   --mainGrey: #ececec;
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.3s linear;
@@ -13,9 +15,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Here we edit our body*/
 body {
-  color: var(--mainBlack);
-  background: var(--mainWhite);
+  color: var(--mainBlack); /* Edit the bars and cart color*/
+  background: var(--mainWhite); /* Edit the background color*/
   font-family: "Lato", sans-serif;
 }
 
@@ -23,35 +27,76 @@ body {
 .navbar {
   position: sticky;
   top: 0;
-  height: 80px;
+  height: 70px;
   width: 100%;
   display: flex;
   align-items: center;
-  background: rgb(231, 226, 221);
+  background: rgb(243, 224, 213);
   z-index: 1;
 }
+/* Edit items positions*/
 .navbar-center {
-  width: 100%;
-  max-width: 1170px;
+  width: 90%;
+  max-width: 1170px; /*Edit the distance between bars and cart*/
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5rem;
 }
+/* Edit the size of cart and bars*/
 .nav-icon {
   font-size: 1.5rem;
 }
+
+/* Edit the cart-btn*/
 .cart-btn {
   position: relative;
   cursor: pointer;
 }
+
+/*Edit the cart-items above cart-btn*/
 .cart-items {
   position: absolute;
-  top: -8px;
+  top: -12px;
   right: -8px;
   background: var(--primaryColor);
   padding: 0 5px;
-  border-radius: 30%;
+  border-radius: 20%;
   color: var(--mainWhite);
+}
+
+.hero {
+  min-height: calc(100vh - 90px);
+  background: url("./images/kawaik.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 2rem;
+}
+.banner-title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 3rem;
+}
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.banner-btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
 }

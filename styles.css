@@ -66,6 +66,7 @@ body {
   color: var(--mainWhite);
 }
 
+/* Edit the class hero*/
 .hero {
   min-height: calc(100vh - 90px);
   background: url("./images/kawaik.png") center/cover no-repeat;
@@ -73,11 +74,14 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/*Edit the class banner*/
 .banner {
   text-align: center;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(3, 3, 3, 0.8); /* Edit the banner color*/
   display: inline-block;
-  padding: 2rem;
+  padding: 2rem; /*Edit the banner padding*/
+  border-radius: 50px;
 }
 .banner-title {
   font-size: 3.4rem;
@@ -85,18 +89,26 @@ body {
   letter-spacing: var(--mainSpacing);
   margin-bottom: 3rem;
 }
+
+.banner-title:hover{
+  background: -webkit-linear-gradient( aliceblue,rgb(7, 7, 63));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
 .banner-btn {
+  border-radius: 30px;
   padding: 1rem 3rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   font-size: 1rem;
   background: var(--primaryColor);
   color: var(--mainBlack);
-  border: 1px solid var(--primaryColor);
+  border: 3px solid var(--primaryColor);
   transition: var(--mainTransition);
   cursor: pointer;
 }
 .banner-btn:hover {
   background: transparent;
-  color: var(--primaryColor);
+  color: aliceblue;
 }

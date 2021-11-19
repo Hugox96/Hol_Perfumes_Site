@@ -59,19 +59,37 @@
     <!--Products Section-->
    <section class= "products">
     <div class = "section-title">
+	    <!-- I created this class to design a button and edit with class css-->
         <button class="ourproducts">
           <h2> Nossos Produtos </h2>  
         </button>
-
     </div>
 
-      <div class="products-center">
-        <!-- Single Product-->
-
-        <article class="product"> 
-
+    <!-- very important class to edit grid and align images products-->
+    <div class="products-center">
+	  
+    <!-- Product 1-->
+    <article class="product"> 
+	
           <div class="img-container">
             <img src="./images/product-1.jpeg" alt="product"
+            class="product-img">
+            <button class="bag-btn" data-id="1"> 
+              <i class="fas fa shopping-cart"> </i> adicionar ao carrinho
+            </button> 
+          </div>
+		  
+          <h3> Sabonete Artesanal </h3>
+          <h4> R$: 10,00 </h4>
+		  
+	</article>
+		
+		
+	<!-- Product 2-->	
+    <article class="product"> 
+
+          <div class="img-container">
+            <img src="./images/product-2.jpeg" alt="product"
             class="product-img">
             <button class="bag-btn" data-id="1"> 
               <i class="fas fa shopping-cart"> </i> adicionar ao carrinho
@@ -80,11 +98,47 @@
 
           <h3> Sabonete Artesanal </h3>
 
-          <h4> R$: 10,00 </h4>
+          <h4> R$: 13,00 </h4>
+		  
+    </article>
+		
+    <!--Product -3-->		
+    <article class="product"> 
 
-        </article>
+          <div class="img-container">
+            <img src="./images/product-3.jpeg" alt="product"
+            class="product-img">
+            <button class="bag-btn" data-id="1"> 
+              <i class="fas fa shopping-cart"> </i> adicionar ao carrinho
+            </button> 
+          </div>
 
-      </div>
+          <h3> Sabonete Artesanal </h3>
+
+          <h4> R$: 15,00 </h4>
+		  
+    </article>
+	
+	
+	<!--Product -4-->		
+    <article class="product"> 
+
+          <div class="img-container">
+            <img src="./images/product-4.jpeg" alt="product"
+            class="product-img">
+            <button class="bag-btn" data-id="1"> 
+              <i class="fas fa shopping-cart"> </i> adicionar ao carrinho
+            </button> 
+          </div>
+
+          <h3> Sabonete Artesanal </h3>
+
+          <h4> R$: 15,00 </h4>
+		  
+    </article>
+
+    </div>
+	
   </section>
 
  

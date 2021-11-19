@@ -31,7 +31,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  background: rgb(243, 224, 213);
+  background: var(--mainWhite);
   z-index: 1;
 }
 /* Edit items positions*/
@@ -114,10 +114,17 @@ body {
 }
 
 /*-------- End of Hero------------*/
+
+
+
+
+/*--------- Begin Products Section------*/
+
+/* Edit the class button*/
 .ourproducts{
   background-color:var(--mainWhite); /* Green */
   border: none;
-  border-radius: 50px;
+  border-radius: 60px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -125,10 +132,10 @@ body {
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-  width: 18%;
-  margin-left:41%;
-  margin-right:41%;
-  margin-bottom: 5%;
+  width: 20%;
+  margin-left:40%;
+  margin-right:40%;
+  margin-bottom: 3%;
  
 }
 
@@ -148,15 +155,22 @@ body {
   letter-spacing: var(--mainSpacing);
 }
 
-.products-center {
-  width: 25vw;
+
+/* Very important class to edit grid property.*/
+.products-center{
+  /*It makes images to be aligned horizontally*/
+  width: 90vw;
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1000px;
+  /* The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, 
+  making it easier to design web pages without having to use floats and positioning.*/
   display: grid;
+  /*It makes image product to be aligned */
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 1.5rem;
-  grid-row-gap: 2rem;
+  grid-row-gap: 1rem;
 }
+
 .img-container {
   position: relative;
   overflow: hidden;
@@ -185,6 +199,7 @@ body {
 .img-container:hover .bag-btn {
   transform: translateX(0);
 }
+
 .product-img {
   display: block;
   width: 100%;

@@ -237,8 +237,8 @@ body {
   width: 100%;
   height: 100%;
   transition: var(--mainTransition);
-  background: rgba(86, 89, 138, 0.5);
-  z-index: 2;
+  background: rgba(2, 4, 31, 0.5);
+  z-index: 3;
   /*visibility: hidden;*/
 }
 .cart {
@@ -249,7 +249,7 @@ body {
   height: 100%;
   overflow: scroll;
   z-index: 1;
-  background: rgb(150, 143, 143);
+  background: rgb(118, 118, 128);
   padding: 1.5rem;
   transition: var(--mainTransition);
   /*transform: translateX(100%);*/
@@ -270,12 +270,14 @@ body {
 .close-cart {
   font-size: 1.7rem;
   cursor: pointer;
+  color:black;
 }
 .cart h2 {
   text-transform: capitalize;
   text-align: center;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 2rem;
+  color: black;
 }
 /*---------- Cart Item -------------------- */
 .cart-item {
@@ -284,26 +286,33 @@ body {
   grid-template-columns: auto 1fr auto;
   grid-column-gap: 1.5rem;
   margin: 1.5rem 0;
+
 }
 .cart-item img {
   width: 75px;
   height: 75px;
 }
-.cart-item h4 {
-  font-size: 0.85rem;
+.cart-item h3 {
+  font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+  color: black;
 }
 .cart-item h5 {
   margin: 0.5rem 0;
   letter-spacing: var(--mainSpacing);
+  color: black;
 }
 .item-amount {
   text-align: center;
+  color: black;
 }
 .remove-item {
-  color: grey;
+  color: black;
   cursor: pointer;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+
 }
 .fa-chevron-up,
 .fa-chevron-down {

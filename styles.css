@@ -47,6 +47,7 @@ body {
 /* Edit the size of cart and bars*/
 .nav-icon {
   font-size: 1.5rem;
+  color: gray;
 }
 
 /* Edit the cart-btn*/
@@ -165,9 +166,11 @@ body {
   /* The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, 
   making it easier to design web pages without having to use floats and positioning.*/
   display: grid;
-  /*It makes image product to be aligned */
+  /*It makes image product to be aligned in columns */
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  /*It add gaps in column*/
   grid-column-gap: 1.5rem;
+  /*It add gaps in row*/
   grid-row-gap: 1rem;
 }
 
@@ -191,7 +194,7 @@ body {
   cursor: pointer;
 }
 .bag-btn:hover {
-  color: rgb(79, 79, 126);
+  color: rgb(151, 151, 190);
 }
 .fa-shopping-cart {
   margin-right: 0.5rem;
@@ -239,7 +242,7 @@ body {
   transition: var(--mainTransition);
   background: rgba(2, 4, 31, 0.5);
   z-index: 3;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 .cart {
   position: fixed;
@@ -252,7 +255,7 @@ body {
   background: rgb(118, 118, 128);
   padding: 1.5rem;
   transition: var(--mainTransition);
-  /*transform: translateX(100%);*/
+  transform: translateX(100%);
 }
 .showCart {
   transform: translateX(0);
